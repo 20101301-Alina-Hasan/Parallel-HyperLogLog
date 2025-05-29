@@ -1,13 +1,13 @@
 
-# Parallel HyperLogLog Cardinality Estimation 🚀📊
+# Parallel HyperLogLog Cardinality Estimation 📊
 
 This project demonstrates how to estimate the cardinality (i.e., the number of unique elements) of dataset columns using the **HyperLogLog (HLL)** algorithm with parallel processing for improved performance.
 
-## Overview
+## Overview 🚀
 
 The script loads a transactional dataset, cleans and standardizes it, and then estimates the number of unique elements in selected columns using HyperLogLog sketches, which are computed in parallel using Python's `multiprocessing` module.
 
-# Features ✨
+### Features ✨
 - Data cleaning: removing duplicates and missing values
 - Standardizing numeric columns (`Quantity` and `UnitPrice`)
 - Visualizing dataset statistics and aggregated customer data
