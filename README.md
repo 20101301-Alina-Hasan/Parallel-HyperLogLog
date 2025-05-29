@@ -49,7 +49,7 @@ cd Parallel-HyperLogLog
 python parallel-hyperloglog.py
 ```
 
-4. The script will output dataset info, statistics, plots, and cardinality estimation results.
+4. The script will output dataset info, statistics, plots, cardinality estimation results, and save the processed data as `updated_dataset.csv`
 
 ## How It Works 🔧
 
