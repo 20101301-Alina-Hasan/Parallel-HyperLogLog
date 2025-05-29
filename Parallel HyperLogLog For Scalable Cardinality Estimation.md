@@ -11,7 +11,7 @@ This document explores the application of parallel processing to the HyperLogLog
 
 Estimating the number of distinct elements, or cardinality, in large datasets is a common requirement in data analysis, network monitoring, and database systems. Traditional counting methods are often infeasible due to high memory consumption and processing time. To address this, **HyperLogLog (HLL)** has emerged as a probabilistic algorithm that offers high accuracy with low memory usage. It utilizes hashing techniques and statistical analysis to approximate cardinalities efficiently.
 
-However, as data volumes continue to grow, even efficient algorithms like HyperLogLog can face scalability issues. This motivates the incorporation of **parallel processing** to further reduce computation time. This paper discusses the feasibility and benefits of parallelizing HLL sketch computations, particularly when applied to transaction data.
+However, as data volumes continue to grow, even efficient algorithms like HyperLogLog can face scalability issues. This motivates the incorporation of **parallel processing** to further reduce computation time. This documentation discusses the feasibility and benefits of parallelizing HLL sketch computations, particularly when applied to transaction data.
 
 ---
 
