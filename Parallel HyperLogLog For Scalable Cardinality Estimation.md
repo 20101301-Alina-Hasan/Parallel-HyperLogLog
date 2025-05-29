@@ -91,7 +91,7 @@ This overhead is likely due to the cost of process creation and data partitionin
 
 ---
 
-## Summary
+### Summary of Analysis
 
 Initial increases in the number of processes generally lead to reduced computation time due to workload distribution. However, beyond a certain threshold, the overhead of managing multiple processes and the limits of hardware concurrency may cause **diminishing returns or increased computation time**.
 
