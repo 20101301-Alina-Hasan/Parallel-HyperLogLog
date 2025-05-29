@@ -37,7 +37,7 @@ pip install pandas numpy matplotlib scikit-learn hyperloglog
 2. Run the script:
 
 ```bash
-python your_script_name.py
+python parallel-hyperloglog.py
 ```
 
 3. The script will output dataset info, statistics, plots, and cardinality estimation results.
