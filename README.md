@@ -33,7 +33,9 @@ pip install pandas numpy matplotlib scikit-learn hyperloglog
 
 ## Usage 
 
-1. Place your dataset file named `data.csv` in the same directory as the script.
+1. Download the dataset file `data.csv` from this link and place it in the same directory as the script:  
+   [Dataset on Google Drive](https://drive.google.com/drive/folders/12ws6gycNK6g2d_exvBIYzRAokSc0Um5P?usp=sharing)
+
 2. Run the script:
 
 ```bash
