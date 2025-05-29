@@ -7,7 +7,7 @@ This project demonstrates how to estimate the cardinality (i.e., the number of u
 
 The script loads a transactional dataset, cleans and standardizes it, and then estimates the number of unique elements in selected columns using HyperLogLog sketches, which are computed in parallel using Python's `multiprocessing` module.
 
-### Features ✨
+## Features ✨
 - Data cleaning: removing duplicates and missing values
 - Standardizing numeric columns (`Quantity` and `UnitPrice`)
 - Visualizing dataset statistics and aggregated customer data
@@ -25,7 +25,7 @@ The script loads a transactional dataset, cleans and standardizes it, and then e
   - scikit-learn
   - hyperloglog
 
-Install dependencies via pip:
+📦 Install dependencies via pip:
 
 ```bash
 pip install pandas numpy matplotlib scikit-learn hyperloglog
