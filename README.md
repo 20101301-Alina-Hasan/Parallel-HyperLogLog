@@ -1,5 +1,5 @@
 
-# Parallel HyperLogLog Cardinality Estimation 📊
+# Parallelizing HyperLogLog for Scalable Cardinality Estimation 📊
 
 This project demonstrates how to estimate the cardinality (i.e., the number of unique elements) of dataset columns using the **HyperLogLog (HLL)** algorithm with parallel processing for improved performance.
 
