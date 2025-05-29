@@ -5,7 +5,13 @@ This project demonstrates how to estimate the cardinality (i.e., the number of u
 
 ## Overview 🚀
 
-The script loads a transactional dataset, cleans and standardizes it, and then estimates the number of unique elements in selected columns using HyperLogLog sketches, which are computed in parallel using Python's `multiprocessing` module.
+This project demonstrates how to estimate the cardinality (i.e., the number of unique elements) of dataset columns using the **HyperLogLog (HLL)** algorithm with parallel processing for improved performance.
+
+The example dataset used is a **transactional dataset** containing **54,190 entries** with columns such as `InvoiceNo`, `StockCode`, `Quantity`, `InvoiceDate`, `UnitPrice`, `CustomerID`, and `Country`. This dataset is first cleaned by removing duplicate and missing rows, and numeric columns like `Quantity` and `UnitPrice` are standardized using z-score normalization.
+
+The script performs exploratory data analysis by visualizing the most frequent countries and aggregated customer purchase behaviors. Then, it estimates the number of unique elements in selected columns using HyperLogLog sketches, which are computed in parallel with Python's `multiprocessing` module for faster execution.
+
+While this example uses a transactional dataset, the approach can be applied to **any large dataset** where estimating unique counts efficiently is required.
 
 ## Features ✨
 - Data cleaning: removing duplicates and missing values
@@ -71,7 +77,7 @@ python parallel-hyperloglog.py
 ## Notes 📝
 
 - The HyperLogLog error rate is set to 1% (`error_rate=0.01`).
-- Parallelization improves performance on large datasets but overhead may limit gains beyond a certain number of processes.
+- Parallelization improves performance on large datasets, but overhead may limit gains beyond a certain number of processes.
 
 ## Contributing 🙌 
 
