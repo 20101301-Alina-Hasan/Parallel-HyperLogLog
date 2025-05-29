@@ -12,7 +12,7 @@ The example dataset used is a **transactional dataset** containing **541,909 ent
 
 The script performs exploratory data analysis by visualizing the most frequent countries and aggregated customer purchase behaviors. Then, it estimates the number of unique elements in selected columns using HyperLogLog sketches, which are computed in parallel with Python's `multiprocessing` module for faster execution.
 
-While this example uses a transactional dataset, the approach can be applied to **any large dataset** where estimating unique counts efficiently is required.
+While this example uses a transactional dataset, the approach can be applied to **any mid- to large-sized dataset** where estimating unique counts efficiently is required.
 
 ## Features ✨
 - Data cleaning: removing duplicates and missing values
