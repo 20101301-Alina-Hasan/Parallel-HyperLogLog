@@ -37,7 +37,12 @@ This property makes HLL highly suitable for distributed computing environments s
 
 ---
 
-## Data Analysis 
+## Data Visualization Strategy
+
+The dataset used includes the following features:
+```python
+['InvoiceNo', 'StockCode', 'Description', 'Quantity', 'InvoiceDate', 'UnitPrice', 'CustomerID', 'Country']
+```
 
 To demonstrate and validate the usefulness of HLL within a transactional dataset, we propose a focused visualization strategy using features from the dataset:
 
@@ -50,16 +55,11 @@ To demonstrate and validate the usefulness of HLL within a transactional dataset
 - **StockCode (Count):**  
   Captures the number of unique products bought. This helps understand customer variety preferences and shopping habits.
 
-The dataset used includes the following features:
-```python
-['InvoiceNo', 'StockCode', 'Description', 'Quantity', 'InvoiceDate', 'UnitPrice', 'CustomerID', 'Country']
-```
-
 ---
 
 ## Cardinality Estimation Performance
 
-To evaluate the performance and scalability of HyperLogLog (HLL) in estimating the cardinality of unique elements within the dataset, we conducted extensive experiments across multiple columns. We compared the actual number of unique elements with the estimated cardinality produced by HLL for each selected column: `InvoiceNo`, `StockCode`, `Quantity`, `InvoiceDate`, `UnitPrice`, `CustomerID`, and `Country`.
+To evaluate the performance and scalability of HyperLogLog (HLL) in estimating the cardinality of unique elements within the dataset, we conducted extensive experiments across multiple columns. We compared the actual number of unique elements with the estimated cardinality produced by HLL for each selected column.
 
 ### **Estimation Accuracy**
 
@@ -75,7 +75,7 @@ To evaluate the performance and scalability of HyperLogLog (HLL) in estimating t
 
 *Table 1: Demonstration of Actual Vs. Estimated Cardinalities*
 
-As evident, the estimations are consistently close to the actual values, validating HLL’s reliability. Notably, even columns with high cardinality like `InvoiceNo` and `InvoiceDate` show minimal error.
+As evident, the estimations are consistently close to the actual values, validating HLL’s reliability. Notably, even columns with high cardinality, like `InvoiceNo` and `InvoiceDate`, show minimal error.
 
 ---
 
@@ -83,9 +83,9 @@ As evident, the estimations are consistently close to the actual values, validat
 
 To investigate the runtime efficiency of HLL under different levels of parallelism, we applied multiprocessing using varying numbers of processes (1, 2, 4, 6, 8). The aim was to determine the optimal number of processes that minimizes execution time while estimating cardinalities across all selected columns.
 
-**Figure 1** plots the average time taken versus the number of processes. Surprisingly, the results demonstrate a non-linear relationship. While the execution time decreases when increasing from 1 to 4 processes (12.17s to 10.75s), further increases in parallelism lead to increased execution times—peaking at 13.32s with 6 processes.
+**Figure 1** plots the average time taken versus the number of processes. Surprisingly, the results demonstrate a non-linear relationship. While the execution time decreases when increasing from 1 to 4 processes (12.17s to 10.75s), further increases in parallelism lead to increased execution times, peaking at 13.32s with 6 processes.
 
-This overhead is likely due to the cost of process creation and data partitioning outweighing the benefit of parallel computation when data size per process becomes too small. The best trade-off between parallel speed and overhead was observed with 4 processes, making it a practical choice for mid-sized datasets.
+This overhead is likely due to the cost of process creation and data partitioning outweighing the benefit of parallel computation when the data size per process becomes too small. The best trade-off between parallel speed and overhead was observed with 4 processes, making it a practical choice for mid-sized datasets.
 
 ![Figure 1: Average Time vs. Number of Processes](Figure_1.png)
 
