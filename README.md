@@ -36,13 +36,20 @@ pip install pandas numpy matplotlib scikit-learn hyperloglog
 1. Download the dataset file `data.csv` from this link and place it in the same directory as the script:  
    [Dataset on Google Drive](https://drive.google.com/drive/folders/12ws6gycNK6g2d_exvBIYzRAokSc0Um5P?usp=sharing)
 
-2. Run the script:
+2. Clone the repository:
+
+```bash
+git clone https://github.com/20101301-Alina-Hasan/Parallel-HyperLogLog.git
+cd Parallel-HyperLogLog
+```
+
+3. Run the script:
 
 ```bash
 python parallel-hyperloglog.py
 ```
 
-3. The script will output dataset info, statistics, plots, and cardinality estimation results.
+4. The script will output dataset info, statistics, plots, and cardinality estimation results.
 
 ## How It Works 🔧
 
