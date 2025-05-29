@@ -3,7 +3,7 @@
 
 ## Abstract
 
-This document explores the application of parallel processing to the HyperLogLog (HLL) algorithm for scalable cardinality estimation on large datasets. It discusses how HLL works, the motivation for parallelizing its computation, the process of merging partial sketches, and the potential for evaluating cardinality at the row level. It also outlines relevant data visualization strategies and presents considerations for future development and performance evaluation.
+This document explores the application of parallel processing to the HyperLogLog (HLL) algorithm for scalable cardinality estimation on large datasets. Using a real-world transactional dataset as a case study, it demonstrates how HLL can be applied to efficiently estimate the number of unique elements across various fields such as invoice numbers, stock codes, and customer IDs. It discusses how HLL works, the motivation for parallelizing its computation, the process of merging partial sketches, and the potential for evaluating cardinality at the row level. It also outlines performance evaluation and considerations for future development.
 
 ---
 
