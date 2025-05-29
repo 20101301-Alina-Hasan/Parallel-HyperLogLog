@@ -39,7 +39,7 @@ pip install pandas numpy matplotlib scikit-learn hyperloglog
 2. Clone the repository:
 
 ```bash
-git clone https://github.com/20101301-Alina-Hasan/Parallel-HyperLogLog.git
+git clone https://github.com/20101301-Alina-Hasan/Parallel-HyperLogLog-Cardinality-Estimation.git
 cd Parallel-HyperLogLog
 ```
 
