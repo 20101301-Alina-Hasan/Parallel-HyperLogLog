@@ -87,7 +87,7 @@ To investigate the runtime efficiency of HLL under different levels of paralleli
 
 This overhead is likely due to the cost of process creation and data partitioning outweighing the benefit of parallel computation when data size per process becomes too small. The best trade-off between parallel speed and overhead was observed with 4 processes, making it a practical choice for mid-sized datasets.
 
-![Figure 1: Average Time vs. Number of Processes](figure_1.png)
+![Figure 1: Average Time vs. Number of Processes](Figure_1.png)
 
 ---
 
