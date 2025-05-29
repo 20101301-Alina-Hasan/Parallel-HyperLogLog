@@ -6,8 +6,7 @@ This project demonstrates how to estimate the cardinality (i.e., the number of u
 ## Overview 🚀
 
 This project demonstrates how to estimate the cardinality (i.e., the number of unique elements) of dataset columns using the **HyperLogLog (HLL)** algorithm with parallel processing for improved performance.
-📄 **Read the full research documentation here**: [Parallelizing HyperLogLog for Scalable Cardinality Estimation](Parallel HyperLogLog For Scalable Cardinality Estimation.md)
-
+📄 **Read the full research documentation here**: [Parallelizing HyperLogLog for Scalable Cardinality Estimation](Parallel%20HyperLogLog%20For%20Scalable%20Cardinality%20Estimation.md)
 
 The example dataset used is a **transactional dataset** containing **54,190 entries** with columns such as `InvoiceNo`, `StockCode`, `Quantity`, `InvoiceDate`, `UnitPrice`, `CustomerID`, and `Country`. This dataset is first cleaned by removing duplicate and missing rows, and numeric columns like `Quantity` and `UnitPrice` are standardized using z-score normalization.
 
